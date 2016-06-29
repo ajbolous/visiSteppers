@@ -1,5 +1,5 @@
 #define SIZE 6
-#define ENABLE 8
+#define ENABLE 10
 
 char buff[SIZE] = { 100, 100, 100, 100, 100,100 };
 int i = 0;
@@ -7,13 +7,15 @@ char c;
 
 void setup() {
   Serial.begin(38400);
+  for(i = 0;i<13;i++)
+    pinMode(i,OUTPUT);
 }
 
 void tickStepper(char directionPin, char stepPin, char direction) {
     digitalWrite(ENABLE,HIGH);
     digitalWrite(directionPin,direction);
     digitalWrite(stepPin,HIGH);
-    //delayMicroseconds(25);
+    delayMicroseconds(25);
     digitalWrite(stepPin,LOW);
 }
 char ackBuff[3] = {'S',0,'E'};

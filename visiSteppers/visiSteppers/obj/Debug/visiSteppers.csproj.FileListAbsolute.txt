@@ -1,0 +1,11 @@
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\bin\Debug\visiSteppers.exe.config
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\bin\Debug\visiSteppers.exe
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\bin\Debug\visiSteppers.pdb
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\obj\Debug\visiSteppers.csprojResolveAssemblyReference.cache
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\obj\Debug\visiSteppers.Main.resources
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\obj\Debug\visiSteppers.Properties.Resources.resources
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\obj\Debug\visiSteppers.StepperGui.resources
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\obj\Debug\visiSteppers.csproj.GenerateResource.Cache
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\obj\Debug\visiSteppers.exe
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\obj\Debug\visiSteppers.pdb
+C:\Users\aj_pa\Documents\Visual Studio 2015\Projects\visiSteppers\visiSteppers\obj\Debug\visiSteppers.RequestGui.resources
