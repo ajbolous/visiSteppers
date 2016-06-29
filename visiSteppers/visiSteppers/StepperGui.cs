@@ -61,21 +61,21 @@ namespace visiSteppers
             this.Invoke((MethodInvoker)delegate
             {
                 if(stepper.targetSteps != 0)
-                this.progressBar1.Value = (int)(100*(double)stepper.ackSteps / stepper.targetSteps);
-
+                    this.progressBar1.Value = (int)(100*(double)stepper.ackSteps / stepper.targetSteps);
+             //   this.progressBar1.Visible = (stepper.ackSteps != stepper.targetSteps);
                 stepsCounter.Text = stepper.ackSteps + "/" + sent + "/" + stepper.targetSteps + " [Step]";
                 lblAbsPos.Text = "Absolute: " + (stepper.absPosition > 0 ? "+" : "")+ Math.Round(stepper.absPosition, 2).ToString() + " [mm]";
                 lblLevelPos.Text = "Leveling: " +(stepper.levelPosition>0 ? "+" : "") + Math.Round(stepper.levelPosition, 2).ToString() + " [mm]";
                 lblTestPos.Text = "Test start: " + (stepper.testPosition > 0 ? "+" : "")  + Math.Round(stepper.testPosition, 2).ToString() + " [mm]";
                 lblCurrentPosition.Text = "Position: " + (stepper.position > 0 ? "+" : "")  + Math.Round(stepper.position, 2).ToString() + " [mm]";
 
-                lblAbsPos.ForeColor =(stepper.absPosition > 0 ? Color.SeaGreen : Color.DarkRed);
-                lblLevelPos.ForeColor = (stepper.levelPosition > 0 ? Color.SeaGreen : Color.DarkRed);
-                lblTestPos.ForeColor = (stepper.testPosition > 0 ? Color.SeaGreen : Color.DarkRed);
-                lblCurrentPosition.ForeColor = (stepper.position > 0 ? Color.SeaGreen : Color.DarkRed);
+                lblAbsPos.ForeColor =(stepper.absPosition >= 0 ? Color.SeaGreen : Color.DarkRed);
+                lblLevelPos.ForeColor = (stepper.levelPosition >= 0 ? Color.SeaGreen : Color.DarkRed);
+                lblTestPos.ForeColor = (stepper.testPosition >= 0 ? Color.SeaGreen : Color.DarkRed);
+                lblCurrentPosition.ForeColor = (stepper.position >= 0 ? Color.SeaGreen : Color.DarkRed);
 
                 double totalPos = stepper.absPosition + stepper.levelPosition + stepper.testPosition + stepper.position;
-                lblTotal.Text = "Total: " + (totalPos > 0 ? "+" : "") + totalPos.ToString();
+                lblTotal.Text = "Total: " + (totalPos > 0 ? "+" : "") + Math.Round(totalPos,2).ToString();
                 lblTotal.ForeColor = (totalPos > 0 ? Color.SeaGreen : Color.DarkRed);
             });
         }

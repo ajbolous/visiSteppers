@@ -55,7 +55,7 @@
             // chkEnabled
             // 
             this.chkEnabled.AutoSize = true;
-            this.chkEnabled.Location = new System.Drawing.Point(7, 6);
+            this.chkEnabled.Location = new System.Drawing.Point(5, 4);
             this.chkEnabled.Name = "chkEnabled";
             this.chkEnabled.Size = new System.Drawing.Size(15, 14);
             this.chkEnabled.TabIndex = 0;
@@ -67,7 +67,7 @@
             this.btnUp.BackColor = System.Drawing.SystemColors.Control;
             this.btnUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUp.ForeColor = System.Drawing.Color.Black;
-            this.btnUp.Location = new System.Drawing.Point(7, 11);
+            this.btnUp.Location = new System.Drawing.Point(61, 4);
             this.btnUp.Name = "btnUp";
             this.btnUp.Size = new System.Drawing.Size(31, 23);
             this.btnUp.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.btnDown.BackColor = System.Drawing.SystemColors.Control;
             this.btnDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDown.ForeColor = System.Drawing.Color.Black;
-            this.btnDown.Location = new System.Drawing.Point(7, 34);
+            this.btnDown.Location = new System.Drawing.Point(98, 4);
             this.btnDown.Name = "btnDown";
             this.btnDown.Size = new System.Drawing.Size(31, 23);
             this.btnDown.TabIndex = 8;
@@ -93,7 +93,7 @@
             this.txtTag.AutoSize = true;
             this.txtTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTag.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtTag.Location = new System.Drawing.Point(5, 23);
+            this.txtTag.Location = new System.Drawing.Point(26, 2);
             this.txtTag.Name = "txtTag";
             this.txtTag.Size = new System.Drawing.Size(25, 25);
             this.txtTag.TabIndex = 17;
@@ -102,7 +102,7 @@
             // lblTestPos
             // 
             this.lblTestPos.AutoSize = true;
-            this.lblTestPos.Location = new System.Drawing.Point(239, 36);
+            this.lblTestPos.Location = new System.Drawing.Point(9, 139);
             this.lblTestPos.Name = "lblTestPos";
             this.lblTestPos.Size = new System.Drawing.Size(53, 13);
             this.lblTestPos.TabIndex = 21;
@@ -111,7 +111,7 @@
             // lblLevelPos
             // 
             this.lblLevelPos.AutoSize = true;
-            this.lblLevelPos.Location = new System.Drawing.Point(239, 23);
+            this.lblLevelPos.Location = new System.Drawing.Point(9, 126);
             this.lblLevelPos.Name = "lblLevelPos";
             this.lblLevelPos.Size = new System.Drawing.Size(72, 13);
             this.lblLevelPos.TabIndex = 20;
@@ -120,7 +120,7 @@
             // lblAbsPos
             // 
             this.lblAbsPos.AutoSize = true;
-            this.lblAbsPos.Location = new System.Drawing.Point(239, 10);
+            this.lblAbsPos.Location = new System.Drawing.Point(9, 113);
             this.lblAbsPos.Name = "lblAbsPos";
             this.lblAbsPos.Size = new System.Drawing.Size(73, 13);
             this.lblAbsPos.TabIndex = 19;
@@ -131,7 +131,7 @@
             this.lblCurrentPosition.AutoSize = true;
             this.lblCurrentPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentPosition.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblCurrentPosition.Location = new System.Drawing.Point(239, 49);
+            this.lblCurrentPosition.Location = new System.Drawing.Point(9, 152);
             this.lblCurrentPosition.Name = "lblCurrentPosition";
             this.lblCurrentPosition.Size = new System.Drawing.Size(102, 16);
             this.lblCurrentPosition.TabIndex = 23;
@@ -141,43 +141,45 @@
             // 
             this.stepsCounter.AutoSize = true;
             this.stepsCounter.BackColor = System.Drawing.Color.Transparent;
-            this.stepsCounter.Location = new System.Drawing.Point(4, 62);
+            this.stepsCounter.Location = new System.Drawing.Point(10, 101);
             this.stepsCounter.Name = "stepsCounter";
             this.stepsCounter.Size = new System.Drawing.Size(45, 13);
             this.stepsCounter.TabIndex = 24;
             this.stepsCounter.Text = "Steps[s]";
             this.stepsCounter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.stepsCounter.Visible = false;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(78, 64);
+            this.progressBar1.Location = new System.Drawing.Point(5, 94);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(151, 12);
+            this.progressBar1.Size = new System.Drawing.Size(121, 10);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 25;
             // 
             // numDelay
             // 
             this.numDelay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numDelay.Location = new System.Drawing.Point(122, 43);
+            this.numDelay.Location = new System.Drawing.Point(63, 45);
             this.numDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.numDelay.Name = "numDelay";
-            this.numDelay.Size = new System.Drawing.Size(73, 16);
+            this.numDelay.Size = new System.Drawing.Size(57, 16);
             this.numDelay.TabIndex = 31;
             this.numDelay.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
+            this.numDelay.ValueChanged += new System.EventHandler(this.numDelay_ValueChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 43);
+            this.label4.Location = new System.Drawing.Point(4, 45);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 30;
@@ -192,7 +194,7 @@
             0,
             0,
             65536});
-            this.numSpeed.Location = new System.Drawing.Point(122, 25);
+            this.numSpeed.Location = new System.Drawing.Point(63, 27);
             this.numSpeed.Maximum = new decimal(new int[] {
             5,
             0,
@@ -204,45 +206,47 @@
             0,
             65536});
             this.numSpeed.Name = "numSpeed";
-            this.numSpeed.Size = new System.Drawing.Size(73, 16);
+            this.numSpeed.Size = new System.Drawing.Size(57, 16);
             this.numSpeed.TabIndex = 29;
             this.numSpeed.Value = new decimal(new int[] {
             5,
             0,
             0,
             65536});
+            this.numSpeed.ValueChanged += new System.EventHandler(this.numSpeed_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 25);
+            this.label3.Location = new System.Drawing.Point(4, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 28;
-            this.label3.Text = "Speed[mm/sec]";
+            this.label3.Text = "Speed";
             // 
             // numStep
             // 
             this.numStep.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numStep.Location = new System.Drawing.Point(124, 8);
+            this.numStep.Location = new System.Drawing.Point(65, 10);
             this.numStep.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
             this.numStep.Name = "numStep";
-            this.numStep.Size = new System.Drawing.Size(71, 16);
+            this.numStep.Size = new System.Drawing.Size(55, 16);
             this.numStep.TabIndex = 27;
             this.numStep.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            this.numStep.ValueChanged += new System.EventHandler(this.numDuration_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 8);
+            this.label1.Location = new System.Drawing.Point(6, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 26;
@@ -252,22 +256,20 @@
             // 
             this.grpSettings.Controls.Add(this.numStep);
             this.grpSettings.Controls.Add(this.numDelay);
-            this.grpSettings.Controls.Add(this.btnUp);
             this.grpSettings.Controls.Add(this.label4);
-            this.grpSettings.Controls.Add(this.btnDown);
             this.grpSettings.Controls.Add(this.numSpeed);
             this.grpSettings.Controls.Add(this.label3);
             this.grpSettings.Controls.Add(this.label1);
-            this.grpSettings.Location = new System.Drawing.Point(30, 2);
+            this.grpSettings.Location = new System.Drawing.Point(4, 27);
             this.grpSettings.Name = "grpSettings";
-            this.grpSettings.Size = new System.Drawing.Size(198, 61);
+            this.grpSettings.Size = new System.Drawing.Size(125, 61);
             this.grpSettings.TabIndex = 32;
             this.grpSettings.TabStop = false;
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(239, 65);
+            this.lblTotal.Location = new System.Drawing.Point(9, 168);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(34, 13);
             this.lblTotal.TabIndex = 33;
@@ -280,8 +282,10 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.grpSettings);
+            this.Controls.Add(this.btnUp);
             this.Controls.Add(this.stepsCounter);
             this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.btnDown);
             this.Controls.Add(this.lblCurrentPosition);
             this.Controls.Add(this.txtTag);
             this.Controls.Add(this.lblAbsPos);
@@ -291,7 +295,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StepperGui";
             this.Padding = new System.Windows.Forms.Padding(2);
-            this.Size = new System.Drawing.Size(392, 82);
+            this.Size = new System.Drawing.Size(131, 185);
             this.Load += new System.EventHandler(this.StepperGui_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numDelay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpeed)).EndInit();

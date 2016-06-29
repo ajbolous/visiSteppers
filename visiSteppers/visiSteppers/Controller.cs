@@ -44,6 +44,7 @@ namespace visiSteppers
             isBusy = true;
             sendPacket(r.ToPacket());
         }
+
         public void disconnect()
         {
             this.serial.Close();

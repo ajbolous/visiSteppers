@@ -19,25 +19,25 @@
     <int>13</int>
   </directionPins>
   <stepSizes>
-    <double>4</double>
-    <double>4</double>
-    <double>4</double>
-    <double>4</double>
-    <double>4</double>
-    <double>4</double>
+    <double>6</double>
+    <double>7.6</double>
+    <double>2</double>
+    <double>2</double>
+    <double>2</double>
+    <double>2</double>
   </stepSizes>
   <stepSpeeds>
-    <double>0.8</double>
-    <double>0.8</double>
-    <double>0.8</double>
-    <double>0.8</double>
-    <double>0.8</double>
-    <double>0.8</double>
+    <double>1.2</double>
+    <double>1.52</double>
+    <double>0.4</double>
+    <double>0.4</double>
+    <double>0.4</double>
+    <double>0.4</double>
   </stepSpeeds>
   <stepDelay>
     <int>0</int>
     <int>0</int>
-    <int>0</int>
+    <int>5000</int>
     <int>0</int>
     <int>0</int>
     <int>0</int>
@@ -52,15 +52,15 @@
   </absolutePositions>
   <levelPositions>
     <double>4</double>
-    <double>4</double>
-    <double>4</double>
-    <double>4</double>
-    <double>4</double>
-    <double>4</double>
+    <double>5.6</double>
+    <double>2</double>
+    <double>2</double>
+    <double>2</double>
+    <double>2</double>
   </levelPositions>
   <currentPositions>
-    <double>0</double>
-    <double>0</double>
+    <double>-4</double>
+    <double>-5.6000000000000005</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>

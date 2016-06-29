@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading;
 
 namespace visiSteppers
-{
-   public  class Task
+{   public  class Task
     {
         public Stepper stepper;
         public Stepper.Direction direction;
@@ -31,6 +30,7 @@ namespace visiSteppers
             stepper.calculatePosition(0);
 
             Thread.Sleep(stepper.stepDelay);
+
             MoveRequest r = new MoveRequest(stepper, direction);
             int sentSteps = 0;
             int i = 0;

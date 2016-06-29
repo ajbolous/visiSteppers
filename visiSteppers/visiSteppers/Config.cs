@@ -54,7 +54,7 @@ namespace visiSteppers
         {
             foreach(Stepper s in control.steppers)
             {
-                instance.currentPositions[s.id] = s.originalPosition;
+                instance.currentPositions[s.id] = s.position;
                 instance.absolutePositions[s.id] = s.absPosition;
                 instance.levelPositions[s.id] = s.levelPosition;
                 instance.testPositions[s.id] = s.testPosition;

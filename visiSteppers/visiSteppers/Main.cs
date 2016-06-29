@@ -38,6 +38,7 @@ namespace visiSteppers
                 s.absPosition = Config.getConfig().absolutePositions[i];
                 s.levelPosition = Config.getConfig().levelPositions[i];
                 s.position = Config.getConfig().currentPositions[i];
+                s.testPosition = Config.getConfig().testPositions[i];
                 s.originalPosition = Config.getConfig().currentPositions[i];
 
                 flowLayoutPanel1.Controls.Add(s.getGui());
@@ -122,7 +123,8 @@ namespace visiSteppers
 
         private void button3_Click(object sender, EventArgs e)
         {
-            job.stopJob();
+            if(job!=null)
+                job.stopJob();
         }
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)

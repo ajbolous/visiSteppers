@@ -52,7 +52,9 @@ namespace visiSteppers
 
         public void moveIn()
         {
-            MoveRequest r = new MoveRequest(this, Direction.In);
+            this.direction = Direction.In;
+
+            MoveRequest r = new MoveRequest(this, direction);
             gui.setQueued();
             this.targetSteps = 1;
             this.ackSteps = 0;
@@ -65,7 +67,9 @@ namespace visiSteppers
         }
         public void moveOut()
         {
-            MoveRequest r = new MoveRequest(this, Direction.Out);
+            this.direction = Direction.Out;
+        
+            MoveRequest r = new MoveRequest(this, direction);
             gui.setQueued();
             this.targetSteps = 1;
             this.ackSteps = 0;
@@ -83,8 +87,6 @@ namespace visiSteppers
 
             if (this.direction == Direction.Out)
                 this.position = this.originalPosition - ackSteps * Config.getConfig().tickSize;
-
-
             gui.updatePosition(sent);
         }
 
